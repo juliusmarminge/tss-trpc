@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --primary: 0 83% 50%;
+    --primary-foreground: 0 100% 97%;
+    --primary-muted: 0 70% 40%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 83% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5% 64.9%;
+
+    --radius: 0.5rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: 240 0% 3.9%; /* Darken the background */
+      --foreground: 0 0% 98%; /* Lighten the foreground text */
+
+      --muted: 240 3.2% 9.8%; /* Darken the muted background */
+      --muted-foreground: 240 5% 64.9%; /* Keep the muted foreground text as is */
+
+      --popover: 240 3.7% 15.9%; /* Darken the popover background */
+      --popover-foreground: 0 0% 98%; /* Lighten the popover foreground text */
+
+      --card: 240 10% 3.9%; /* Darken the card background */
+      --card-foreground: 0 0% 98%; /* Lighten the card foreground text */
+
+      --primary: 0 63% 50%; /* Keep the brand color hue and saturation */
+      --primary-foreground: 0 100% 97%; /* Lighten the primary foreground text */
+      --primary-muted: 0 63% 44%; /* Keep the brand muted color hue and saturation */
+
+      --secondary: 240 3.2% 9.8%; /* Darken the secondary background */
+      --secondary-foreground: 0 0% 98%; /* Lighten the secondary foreground text */
+
+      --accent: 240 3.2% 9.8%; /* Darken the accent background */
+      --accent-foreground: 0 0% 98%; /* Lighten the accent foreground text */
+
+      --destructive: 0 63% 50%; /* Keep the brand color hue and saturation */
+      --destructive-foreground: 0 85.7% 97.3%; /* Lighten the destructive foreground text */
+
+      --border: 240 3.2% 9.8%; /* Darken the border color */
+      --input: 240 3.2% 9.8%; /* Darken the input background */
+      --ring: 240 3.2% 9.8%; /* Darken the ring color */
+    }
+  }
+
+  html {
+    @apply bg-background text-foreground antialiased lg:bg-muted;
+  }
+}

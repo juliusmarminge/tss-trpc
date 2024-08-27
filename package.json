@@ -1,0 +1,48 @@
+{
+  "name": "tss-trpc",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev --port 3030",
+    "build": "vinxi build",
+    "format": "prettier . --write --list-different",
+    "start": "vinxi start --port 3030",
+    "test": "playwright test --project=dev",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.2",
+    "@heroicons/react": "^2.1.5",
+    "@tanstack/react-query": "5.52.2",
+    "@tanstack/react-query-devtools": "5.52.2",
+    "@tanstack/react-router": "1.51.0",
+    "@tanstack/react-router-with-query": "1.51.0",
+    "@tanstack/router-devtools": "1.51.0",
+    "@tanstack/start": "1.51.0",
+    "@trpc/client": "11.0.0-rc.485",
+    "@trpc/react-query": "11.0.0-rc.485",
+    "@trpc/server": "11.0.0-rc.485",
+    "framer-motion": "^11.3.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "superjson": "2.2.1",
+    "tailwind-merge": "^2.4.0",
+    "zod": "3.23.8",
+    "vinxi": "0.4.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/react": "18.3.4",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "9.9.1",
+    "prettier": "3.3.3",
+    "tailwindcss-animate": "1.0.7",
+    "tailwindcss": "3.4.10",
+    "typescript": "5.5.4",
+    "vite": "^5.4.2"
+  },
+  "packageManager": "pnpm@9.8.0",
+  "prettier": {}
+}
